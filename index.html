@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            color: #ffffff;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            padding: 15px;
+            border-radius: 4px;
+            position: relative;
+            overflow-x: auto;
+            transition: all 0.3s ease;
+        }
+        .code-block:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+        .copy-feedback {
+            display: none;
+            margin-top: 10px;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .input-group input {
+            border-radius: 0;
+        }
+        .input-group button {
+            border-radius: 0;
+            transition: background-color 0.3s ease;
+        }
+        .input-group button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Random Quote Gen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#what-is-cdn">What is CDN?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-to-use">How to Use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#customization">Customization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#best-practices">Best Practices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cdn-links">CDN Links</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introduction Section -->
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>The Random Quote Generator CDN provides an easy way to integrate a random quote feature into your website. By using this CDN, you can dynamically generate and display random quotes with minimal setup.</p>
+        </section>
+
+        <!-- What is CDN? Section -->
+        <section id="what-is-cdn" class="section">
+            <h2>What is a CDN?</h2>
+            <p>A Content Delivery Network (CDN) is a network of servers distributed across various geographical locations. The CDN delivers web content to users from the server closest to their location, improving loading times and reducing latency. This is particularly useful for delivering static content like stylesheets and scripts.</p>
+        </section>
+
+        <!-- Benefits of Using a CDN Section -->
+        <section id="benefits" class="section">
+            <h2>Benefits of Using a CDN</h2>
+            <ul>
+                <li><strong>Faster Load Times:</strong> CDNs reduce latency by serving content from servers closer to users, resulting in faster page load times.</li>
+                <li><strong>Improved Performance:</strong> CDNs handle high traffic volumes more efficiently, leading to better overall website performance.</li>
+                <li><strong>Increased Reliability:</strong> With multiple servers available, CDNs offer redundancy in case one server fails, ensuring continuous availability.</li>
+                <li><strong>Enhanced Security:</strong> CDNs provide security features such as DDoS protection and secure data transfer, helping to protect your website.</li>
+            </ul>
+        </section>
+
+        <!-- How to Use the CDN Section -->
+        <section id="how-to-use" class="section">
+            <h2>How to Use the Random Quote Generator CDN</h2>
+            <p>To use the Random Quote Generator CDN on your website, follow these steps:</p>
+            <ol>
+                <li><strong>Include CDN Links:</strong> Add the CDN links for the CSS and JavaScript files to your HTML file. The CSS file will style your quote generator, while the JavaScript file will handle the quote generation functionality.</li>
+                <li><strong>Integrate the HTML:</strong> Use the provided HTML code to integrate the quote generator into your webpage. This code includes the layout for displaying quotes and a button to generate new quotes.</li>
+                <li><strong>Customize as Needed:</strong> Modify the CSS and JavaScript files to fit your design preferences and functional requirements.</li>
+            </ol>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard()">Copy HTML Code</button>
+                <pre id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Random Quote Generator&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://programmerkr.github.io/quote_gen_api/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Random Quotes Generator&lt;/h1&gt;
+        &lt;div class="quote-box"&gt;
+            &lt;p id="quote"&gt;Click the button below to get a random quote.&lt;/p&gt;
+            &lt;p id="author"&gt;~ Kanishk Raj&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;button id="generate-btn"&gt;Generate Quote&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;script src="https://programmerkr.github.io/quote_gen_api/script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </section>
+
+        <!-- Customization Section -->
+        <section id="customization" class="section">
+            <h2>Customization</h2>
+            <p>The Random Quote Generator CDN can be customized to better fit your website’s design and functionality needs. Here’s how you can customize it:</p>
+            <ul>
+                <li><strong>CSS Styling:</strong> Modify the `style.css` file to adjust fonts, colors, and layout to match your website’s theme.</li>
+                <li><strong>JavaScript Functionality:</strong> Edit the `script.js` file to change how quotes are generated, displayed, or interacted with.</li>
+                <li><strong>HTML Structure:</strong> Adjust the HTML code to fit your website’s layout and design.</li>
+            </ul>
+        </section>
+
+        <!-- Best Practices Section -->
+        <section id="best-practices" class="section">
+            <h2>Best Practices</h2>
+            <p>When using a CDN for your quote generator, follow these best practices to ensure optimal performance and security:</p>
+            <ul>
+                <li><strong>Always use HTTPS:</strong> Ensure that your CDN links use HTTPS to secure data transfer.</li>
+                <li><strong>Monitor CDN Performance:</strong> Regularly check the performance of your CDN and make adjustments as needed.</li>
+                <li><strong>Update CDN Links:</strong> Keep your CDN links up-to-date to benefit from the latest features and security improvements.</li>
+                <li><strong>Test Across Devices:</strong> Ensure your quote generator works well on various devices and screen sizes.</li>
+            </ul>
+        </section>
+
+        <!-- CDN Links Section -->
+        <section id="cdn-links" class="section">
+            <h2>CDN Links</h2>
+            <p>Copy the CDN links below to use in your project. Click the "Copy" button next to each link to copy it to your clipboard.</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="css-cdn" value="https://programmerkr.github.io/quote_gen_api/style.css" readonly>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="copyCDN('css-cdn')">Copy CSS CDN</button>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="js-cdn" value="https://programmerkr.github.io/quote_gen_api/script.js" readonly>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="copyCDN('js-cdn')">Copy JS CDN</button>
+                </div>
+            </div>
+            <div id="cdn-copy-feedback" class="copy-feedback">CDN link copied to clipboard!</div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Random Quote Generator. All rights reserved. | Designed by <a href="https://github.com/ProgrammerKR" target="_blank">ProgrammerKR</a></p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function copyToClipboard() {
+            const codeText = document.getElementById('code-example').innerText;
+            navigator.clipboard.writeText(codeText).then(() => {
+                document.getElementById('copy-feedback').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('copy-feedback').style.display = 'none';
+                }, 2000);
+            });
+        }
+
+        function copyCDN(id) {
+            const cdnLink = document.getElementById(id).value;
+            navigator.clipboard.writeText(cdnLink).then(() => {
+                document.getElementById('cdn-copy-feedback').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('cdn-copy-feedback').style.display = 'none';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
